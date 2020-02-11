@@ -16,25 +16,37 @@
 ## Criando a aplicação
 
 Criar o diretório, abrir o editor e rodar inicialmente:
+
 `yarn init -y`
 
 Instalar o nodemon e criar o script dentro do packages.json:
+
 `yarn add nodemon -D`
+
 `“scripts” = {“dev”: “nodemon index.js”}`
 
 Instalar o express:
+
 `yarn add express`
 
 Criar o arquivo index.js e importar o express:
+
 `const express = require(‘express’)`
 
 Instanciar o express, utilizar json e deixar escutando uma porta:
+
 `const server = express();`
+
 `server.use(express.json());`
+
 `server.listen(8000);`
 
 Criar rotas com a instância do express:
+
 `server.get(“/caminho”, (request, response) => {});`
+
 `server.post();`
+
 `server.put();`
+
 `server.delete();`
